@@ -148,17 +148,17 @@ def run_test_digits_in_cube():
     print('-----------------------------------------------------')
 
     expected = 8
-    answer = digits_in_cube(5**3)
+    answer = digits_in_cube(5)
     print('Test 1 expected:', expected)
     print('         actual:', answer)
 
     expected = 10
-    answer = digits_in_cube(4**3)
+    answer = digits_in_cube(4)
     print('Test 2 expected:', expected)
     print('         actual:', answer)
 
     expected = 1
-    answer = digits_in_cube(10**3)
+    answer = digits_in_cube(10)
     print('Test 3 expected:', expected)
     print('         actual:', answer)
 
@@ -184,7 +184,7 @@ def digits_in_cube(n):
     ####################################################################
     # ------------------------------------------------------------------
 
-    return sum_of_digits(n)
+    return sum_of_digits(n**3)
 
 def run_test_digits_in_power():
     """ Tests the   digits_in_power   function. """
